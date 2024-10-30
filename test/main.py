@@ -15,7 +15,8 @@ def main(page: ft.Page):
 
 
    new_task = ft.TextField(hint_text="Задача", width=300)
-   page.add(ft.Row([new_task, ft.ElevatedButton("Добавить задачу", on_click=add_cliked, visible=False)]))
+   page.add(ft.Row([new_task, ft.ElevatedButton("Добавить задачу", on_click=add_cliked)]))
+   page.add(ft.TextAffinity("Hello"))
 
     
 ft.app(main)
